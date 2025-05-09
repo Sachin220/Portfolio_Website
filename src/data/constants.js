@@ -302,7 +302,7 @@ export const Bio = {
       
       video:"https://youtu.be/9F1tIk2uGnM",
       image:
-        "https://github.com/Sachin220/Maize_Leaf_Classification/blob/main/maizeleafdetection.png?raw=true",
+        "https://github.com/Sachin220/Portfolio_Website/blob/main/src/images/image%20(1).png?raw=true",
       tags: [
         "OpenCV",
         "Python",
@@ -491,21 +491,21 @@ export const Bio = {
     {
       title: "CCNA: Introduction to Networks",
       badge: "https://images.credly.com/images/70d71df5-f3dc-4380-9b9d-f22513a70417/twitter_thumb_201604_CCNAITN__1_.png",
-      image: "https://media.licdn.com/dms/image/v2/D5622AQF7KZucGupQGA/feedshare-shrink_800/feedshare-shrink_800/0/1730608756662?e=2147483647&v=beta&t=64fpaZ2gGVNuRkllQ9XoYiqJa7MQPq0xIQss7Gvaeho",
+      image: "https://github.com/Sachin220/Portfolio_Website/blob/main/src/images/CCNA%20Introduction%20to%20Networks.jpg?raw=true",
     },
     {
       title: "CCNA: Switching, Routing, and Wireless Essentials",
       badge: "https://images.credly.com/images/f4ccdba9-dd65-4349-baad-8f05df116443/CCNASRWE__1_.png",
-      image: "",
+      image: "https://github.com/Sachin220/Portfolio_Website/blob/main/src/images/CCNA%20Switching,%20Routing,%20and%20Wireless%20Essentials.jpg?raw=true",
     },
     {
       title: "AWS Academy Graduate - AWS Academy Cloud Foundations",
       badge: "https://images.credly.com/images/2f7b0627-48a0-4894-8d46-3245bdfe0463/twitter_thumb_201604_image.png",
-      image: "",
+      image: "https://github.com/Sachin220/Portfolio_Website/blob/main/src/images/AWS%20Academy%20Graduate%20-%20AWS%20Academy%20Cloud%20Foundations.jpg?raw=true",
     },
     {
       title: "AWS Academy Graduate - AWS Academy Machine Learning Foundations",
       badge: "https://images.credly.com/images/254b883a-44a3-4cec-b6f2-946a80522b39/image.png",
-      image: "",
+      image: "https://github.com/Sachin220/Portfolio_Website/blob/main/src/images/AWS%20Academy%20Graduate%20-%20AWS%20Academy%20Machine%20Learning%20Foundations.jpg?raw=true",
     }
   ];
