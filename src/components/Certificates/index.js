@@ -52,7 +52,8 @@ const CertificatesContainer = styled.div`
 
 const Certificate = styled.div`
   width: 100%;
-  max-width: 350px;
+  max-width: 30%;
+  min-width: 250px;
   height: 400px;
   background: ${({ theme }) => theme.card};
   border: 0.1px solid #e6c200;
@@ -71,18 +72,22 @@ const Certificate = styled.div`
     transform: scale(1.05);
   }
 
-  @media (max-width: 768px) {
-    max-width: 300px;
-    height: 350px;
-    padding: 10px 36px;
+  @media (max-width: 1024px) {
+    max-width: 45%;
   }
 
-  @media (max-width: 500px) {
-    max-width: 250px;
+  @media (max-width: 768px) {
+    max-width: 100%;
+    height: 350px;
+    padding: 12px 24px;
+  }
+
+  @media (max-width: 480px) {
     height: 300px;
-    padding: 10px 36px;
+    padding: 10px 16px;
   }
 `;
+
 
 const CertificateTitle = styled.h2`
   font-size: 24px;
