@@ -372,6 +372,7 @@ export const Bio = {
       date: "Jan 2025 - May 2025",
       description:
         "Echobeat Music is an innovative music platform that adapts to users' preferences and moods by creating personalized playlists and real-time audio experiences, offering interactive music controls and a dynamic, immersive listening environment.",
+      video:"https://youtu.be/Pr-5POpgvRA",
       image:
         "https://github.com/Sachin220/Portfolio_Website/blob/main/src/images/Echobeats.png?raw=true",
       tags: ["React Js", "MongoDB", "Clerk Auth", "Node JS", "Express JS","Cloudinary"],
