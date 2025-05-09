@@ -245,6 +245,7 @@ export const Bio = {
     {
       id: 0,
       img: "https://www.mitalandicampus.edu.in/assets/images/logo/mitaoe-logo.jpg",
+      instituteImg: "https://mitaoe.ac.in/img/gallery1.jpg",
       school: "MIT Academy of Engineering, Pune",
       date: "2021 - Present",
       grade: "8.71 CGPA",
@@ -254,6 +255,7 @@ export const Bio = {
     {
       id: 1,
       img: "https://www.shahueducation.com/front-asset/img/Shahu-College-final-logo.png",
+      instituteImg: "https://content3.jdmagicbox.com/v2/comp/buldhana/j4/9999p7262.7262.180207134729.u5j4/catalogue/sharda-dnyanpeeth-chaitanya-wadi-buldhana-educational-institutes-b4ibp7sw6v.jpg",
       school: "Rajarshi Shahu Junior College, Mhasla, Buldhana",
       date: "2019 - 2021",
       grade: "94.50%",
@@ -263,6 +265,7 @@ export const Bio = {
     {
       id: 2,
       img: "https://i.tracxn.com/logo/company/Screenshot_from_2025-01-27_13-54-53_4dafbb89-0458-476e-bd07-d1e37f943c51.png?format=webp&height=120&width=120",
+      instituteImg: "https://content3.jdmagicbox.com/v2/comp/buldhana/j4/9999p7262.7262.180207134729.u5j4/catalogue/sharda-dnyanpeeth-chaitanya-wadi-buldhana-educational-institutes-b4ibp7sw6v.jpg",
       school: "Sharda Dnyanpeeth, Buldhana",
       date: "2007 - 2019",
       grade: "89.4%",
