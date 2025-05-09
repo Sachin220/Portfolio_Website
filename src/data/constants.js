@@ -527,5 +527,20 @@ export const Bio = {
       title: "AWS Academy Graduate - AWS Academy Machine Learning Foundations",
       badge: "https://images.credly.com/images/254b883a-44a3-4cec-b6f2-946a80522b39/image.png",
       image: "https://github.com/Sachin220/Portfolio_Website/blob/main/src/images/AWS%20Academy%20Graduate%20-%20AWS%20Academy%20Machine%20Learning%20Foundations.jpg?raw=true",
+    },
+    {
+      title: "Edunet TechSaksham",
+      badge: "",
+      image: "https://github.com/Sachin220/Portfolio_Website/blob/main/src/images/202101040217_Certificate_page-0001.jpg?raw=true",
+    },
+    {
+      title: "Avinya 2025",
+      badge: "",
+      image: "https://github.com/Sachin220/Portfolio_Website/blob/main/src/images/IMG20250509090732.jpg?raw=true",
+    },
+    {
+      title: "FLC Editorial Team Lead",
+      badge: "",
+      image: "https://github.com/Sachin220/Portfolio_Website/blob/main/src/images/IMG20250509090744.jpg?raw=true",
     }
   ];

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { certificates } from '../../data/constants'; // Assuming you have a `certificates` data object
+import { certificates } from '../../data/constants';
 
 const Container = styled.div`
   display: flex;
@@ -88,19 +88,20 @@ const Certificate = styled.div`
   }
 `;
 
-
 const CertificateTitle = styled.h2`
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
   color: ${({ theme }) => theme.text_secondary};
-  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
+  word-wrap: break-word;
+  white-space: normal;
 `;
 
 const CertificateImage = styled.img`
   width: 100px;
   height: 100px;
   border-radius: 8px;
-  margin-bottom: 20px;
   object-fit: cover;
 `;
 
@@ -145,9 +146,9 @@ const ModalCloseButton = styled.button`
 `;
 
 const CertificateModalImage = styled.img`
-  max-width: 90%; /* Ensures the image doesn't stretch too large */
-  max-height: 500px; /* Limits the height to keep the image in view */
-  object-fit: contain; /* Ensures the aspect ratio is maintained */
+  max-width: 90%;
+  max-height: 500px;
+  object-fit: contain;
   margin-bottom: 20px;
 `;
 
@@ -169,7 +170,15 @@ const CertificatesPage = () => {
         <CertificatesContainer>
           {certificates.map((certificate) => (
             <Certificate key={certificate.title} onClick={() => openModal(certificate)}>
-              <CertificateImage src={certificate.badge} alt={certificate.title} />
+              {certificate.badge ? (
+                <CertificateImage src={certificate.badge} alt={certificate.title} />
+              ) : (
+                <CertificateModalImage
+                  src={certificate.image}
+                  alt={certificate.title}
+                  style={{ width: '100%', height: 'auto', maxHeight: '260px', borderRadius: '8px' }}
+                />
+              )}
               <CertificateTitle>{certificate.title}</CertificateTitle>
             </Certificate>
           ))}
