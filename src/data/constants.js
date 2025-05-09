@@ -254,7 +254,7 @@ export const Bio = {
     },
     {
       id: 1,
-      img: "https://www.shahueducation.com/front-asset/img/Shahu-College-final-logo.png",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEvxQ4u8L7wQp8aFsOeq941WdMLXmMBq6tiA&s",
       instituteImg: "https://content3.jdmagicbox.com/v2/comp/buldhana/j4/9999p7262.7262.180207134729.u5j4/catalogue/sharda-dnyanpeeth-chaitanya-wadi-buldhana-educational-institutes-b4ibp7sw6v.jpg",
       school: "Rajarshi Shahu Junior College, Mhasla, Buldhana",
       date: "2019 - 2021",
