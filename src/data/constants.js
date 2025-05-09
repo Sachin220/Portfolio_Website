@@ -279,7 +279,7 @@ export const Bio = {
       description:
         "Developed a web-based application for detecting diseases in maize leaves using OpenCV, PyTorch, and Streamlit. The application processes leaf images to identify potential infections, utilizing image processing techniques with OpenCV and a deep learning model built with PyTorch for accurate disease classification. The Streamlit interface enables real-time image uploads, visualization of detection results, and user-friendly interactions. This project focuses on improving agricultural productivity by providing farmers and researchers with an accessible tool for early disease detection.",
       
-      video:"https://www.youtube.com/watch?v=HlNjPrLEKK4",
+      video:"https://youtu.be/9F1tIk2uGnM",
       image:
         "https://github.com/Sachin220/Maize_Leaf_Classification/blob/main/maizeleafdetection.png?raw=true",
       tags: [
