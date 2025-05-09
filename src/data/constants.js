@@ -185,7 +185,7 @@ export const Bio = {
     {
       id: 1,
       img: "https://foreignlanguageclub.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F1.1.868b9b94.png&w=256&q=75",
-      role: "Social Media Lead",
+      role: "Editorial Team Lead",
       company: "Foreign Language Club MIT AOE",
       date: "June 2024 - January 2025",
       desc: "Worked as the Editorial Team Lead, responsible for overseeing the creation and review of editorial content. Duties included writing engaging articles, reviewing and refining content for clarity and quality, and collaborating with team members to ensure consistency in tone and style. Focused on maintaining high editorial standards while meeting deadlines and enhancing audience engagement through well-crafted content.",
