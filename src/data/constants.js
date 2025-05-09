@@ -296,19 +296,22 @@ export const Bio = {
     {
       id: 10,
       title: "Avatar Based Sign Language Video Generation",
-      date: "Aug 2024 - Dec 2024",
+      date: "Aug 2023 - Dec 2024",
       description:
         "Avatar-Based Sign Language Video Generation is a system that converts text or speech into sign language using a 3D animated avatar, enabling real-time, accessible communication for the hearing impaired. The system utilizes deep learning techniques to analyze input text or speech, generating corresponding sign language gestures performed by the avatar. This innovative approach enhances communication accessibility and inclusivity for individuals with hearing impairments, bridging the gap between spoken and signed languages.",
       
-      video:"https://youtu.be/9F1tIk2uGnM",
+      video:"https://youtu.be/bnQL6LkBSsM",
       image:
         "https://github.com/Sachin220/Portfolio_Website/blob/main/src/images/image%20(1).png?raw=true",
       tags: [
         "OpenCV",
         "Python",
-        "Streamlit",
+        "PyTorch",
         "TensorFlow",
         "CNN",
+        "LSTM",
+        "Encoder-Decoder",
+        "3D Animation",
       ],
       category: "Machine Learning",
       github: "https://github.com/Sachin220/ISL.git",
