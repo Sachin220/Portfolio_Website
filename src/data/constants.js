@@ -362,6 +362,20 @@ export const Bio = {
       github: "",
       webapp: "",
     },
+
+    {
+      id: 5,
+      title: "Echobeat Music",
+      date: "Jan 2025 - May 2025",
+      description:
+        "Echobeat Music is an innovative music platform that adapts to users' preferences and moods by creating personalized playlists and real-time audio experiences, offering interactive music controls and a dynamic, immersive listening environment.",
+      image:
+        "https://github.com/Sachin220/Portfolio_Website/blob/main/src/images/Echobeats.png?raw=true",
+      tags: ["React Js", "MongoDB", "Clerk Auth", "Node JS", "Express JS","Cloudinary"],
+      category: "web app",
+      github: "https://github.com/Sachin220/Spotify-Clone.git",
+      
+    },
     // {
     //   id: 2,
     //   title: "Brain Tumor Detection",
