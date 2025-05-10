@@ -196,6 +196,21 @@ export const Bio = {
         "Adobe Photoshop",
       ],
     },
+
+    {
+      id: 1,
+      img: "https://yt3.ggpht.com/ioZP3Db6klqxN_kfZ3vaYu6VbwxSI0de-GSd4YI2lZNziwYGEMMbxsIXp743Os9961iohvMJRA=s176-c-k-c0x00ffffff-no-rj-mo",
+      role: "Content Creator",
+      company: "KnowTech YouTube",
+      date: "June 2022 - Present",
+      desc: "KnowTech is a YouTube channel dedicated to tech enthusiasts who enjoy exploring technology without necessarily being experts. The channel offers a variety of videos covering tech devices, gadgets, and tutorials, including topics like installing Chrome extensions on Android devices. As a content creator, I contribute to the channel by researching and creating engaging content that simplifies complex tech concepts for a broader audience. My role involves scriptwriting, video editing, and ensuring that the content is accessible and enjoyable for viewers of all levels of tech knowledge.",
+      skills: [
+        "Figma",
+        "Canva",
+        "Notion",
+        "Adobe Photoshop",
+      ],
+    },
     // {
     //   id: 2,
     //   img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/girlScript.jpeg?alt=media&token=e656a621-cf3c-4230-bf0f-e74b4cec6035",
