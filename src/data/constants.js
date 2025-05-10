@@ -197,6 +197,7 @@ export const Bio = {
         "Notion",
         "Adobe Photoshop",
       ],
+      imgPreview:'https://github.com/Sachin220/Portfolio_Website/blob/main/src/images/IMG20250509090744.jpg?raw=true',
     },
     // {
     //   id: 2,
