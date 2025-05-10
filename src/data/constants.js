@@ -1,3 +1,5 @@
+import { video } from "framer-motion/client";
+
 export const Bio = {
     name: "Sachin Chavan",
     roles: [
@@ -166,7 +168,7 @@ export const Bio = {
         "Express.js",
         "MongoDB"
         ],
-      doc: "https://drive.google.com/file/d/1jhNNnQ5XFE9ZDQFHLN1fcDu3-gFOxjwi/preview",
+      imgPreview: 'https://github.com/Sachin220/Portfolio_Website/blob/main/src/images/Completion_Certificate.jpg?raw=true',
     },
     {
       id: 0,
@@ -191,22 +193,6 @@ export const Bio = {
       desc: "Worked as the Editorial Team Lead, responsible for overseeing the creation and review of editorial content. Duties included writing engaging articles, reviewing and refining content for clarity and quality, and collaborating with team members to ensure consistency in tone and style. Focused on maintaining high editorial standards while meeting deadlines and enhancing audience engagement through well-crafted content.",
       skills: [
         "Figma",
-        "Canva",
-        "Notion",
-        "Adobe Photoshop",
-      ],
-    },
-
-    {
-      id: 1,
-      img: "https://yt3.ggpht.com/ioZP3Db6klqxN_kfZ3vaYu6VbwxSI0de-GSd4YI2lZNziwYGEMMbxsIXp743Os9961iohvMJRA=s176-c-k-c0x00ffffff-no-rj-mo",
-      role: "Content Creator",
-      company: "KnowTech YouTube",
-      date: "June 2022 - Present",
-      desc: "KnowTech is a YouTube channel dedicated to tech enthusiasts who enjoy exploring technology without necessarily being experts. The channel offers a variety of videos covering tech devices, gadgets, and tutorials, including topics like installing Chrome extensions on Android devices. As a content creator, I contribute to the channel by researching and creating engaging content that simplifies complex tech concepts for a broader audience. My role involves scriptwriting, video editing, and ensuring that the content is accessible and enjoyable for viewers of all levels of tech knowledge.",
-      skills: [
-        "YouTube",
-        "Video Editing",
         "Canva",
         "Notion",
         "Adobe Photoshop",
@@ -334,30 +320,6 @@ export const Bio = {
       ],
       category: "Machine Learning",
       github: "https://github.com/Sachin220/ISL.git",
-    },
-
-    {
-      id: 11,
-      title: "TrafficSense-DTLS",
-      date: "Jan 2025 - May 2025",
-      description:
-        "TrafficSense-DTLS is an AI-driven dynamic traffic signal system that uses YOLOv8 for real-time vehicle detection and adaptive signal timing, aiming to reduce congestion and enable seamless urban mobility through intelligent traffic flow management.",
-      
-      video:"https://youtu.be/pzL6Ac1X5pA",
-      image:
-        "https://github.com/Sachin220/Portfolio_Website/blob/main/src/images/TrafficSense.png?raw=true",
-      tags: [
-        "OpenCV",
-        "Python",
-        "PyTorch",
-        "TensorFlow",
-        "RNN",
-        "LSTM",
-        "Bi-LSTM",
-        "PyGame",
-      ],
-      category: "Machine Learning",
-      github: "",
     },
     // {
     //   id: 0,

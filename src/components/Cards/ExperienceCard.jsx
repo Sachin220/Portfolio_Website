@@ -1,186 +1,197 @@
-import React from 'react'
-import styled from 'styled-components'
-
-const Document = styled.img`
-    display: none;
-    height: 70px;
-    width: fit-content;
-    background-color: #000;
-    border-radius: 10px;
-    &:hover{
-        cursor: pointer;
-        opacity: 0.8;
-    }
-`
-
-const Description = styled.div`
-    width: 100%;
-    font-size: 15px;
-    font-weight: 400;
-    color: ${({ theme }) => theme.text_primary + 99};
-    margin-bottom: 10px;
-    @media only screen and (max-width: 768px){
-        font-size: 12px;
-    }
-`
-
-const Span = styled.span`
-overflow: hidden;
-display: -webkit-box;
-max-width: 100%;
--webkit-line-clamp: 4;
--webkit-box-orient: vertical;
-text-overflow: ellipsis;
-`
+import React, { useState } from 'react';
+import styled from 'styled-components';
 
 const Card = styled.div`
-    width: 650px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-    padding: 12px 16px;
-    justify-content: space-between;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    transition: all 0.3s ease-in-out;
-    &:hover{
-        box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
-        transform: translateY(-5px);
-    }
-    @media only screen and (max-width: 768px){
-        padding: 10px;
-        gap: 8px;
-        width: 300px;
-    }
+  width: 650px;
+  border-radius: 10px;
+  padding: 12px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border: 0.1px solid #e6c200;
+  box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
+  transition: all 0.3s ease-in-out;
 
-    &:hover ${Document}{
-        display: flex;
-    }
+  &:hover {
+    transform: translateY(-5px);
+  }
 
-    &:hover ${Span}{
-        overflow: visible;
-        -webkit-line-clamp: unset;
-
-    }
-
-    border: 0.1px solid #e6c200;
-    box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
-`
+  @media only screen and (max-width: 768px) {
+    width: 300px;
+    padding: 10px;
+  }
+`;
 
 const Top = styled.div`
-    width: 100%;
-    display: flex;
-    gap: 12px
-`
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+`;
+
+const Left = styled.div`
+  display: flex;
+  gap: 12px;
+`;
 
 const Image = styled.img`
-    height: 50px;
-    background-color: #000;
-    border-radius: 10px;
-    margin-top: 4px;
-    @media only screen and (max-width: 768px){
-        height: 40px;
-    }
-`
+  height: 50px;
+  border-radius: 10px;
+
+  @media only screen and (max-width: 768px) {
+    height: 40px;
+  }
+`;
 
 const Body = styled.div`
-    width: 100%;
-    display: flex;
-    flex-direction: column; 
-`
-
+  display: flex;
+  flex-direction: column;
+`;
 
 const Role = styled.div`
-    font-size: 18px;
-    font-weight: 600;
-    color: ${({ theme }) => theme.text_primary + 99};
-    @media only screen and (max-width: 768px){
-        font-size: 14px;
-    }
-`
+  font-size: 18px;
+  font-weight: 600;
+  color: ${({ theme }) => theme.text_primary + 99};
+`;
 
 const Company = styled.div`
-    font-size: 14px;
-    font-weight: 500;
-    color: ${({ theme }) => theme.text_secondary + 99};
-    @media only screen and (max-width: 768px){
-        font-size: 12px;
-    }
-`
+  font-size: 14px;
+  font-weight: 500;
+  color: ${({ theme }) => theme.text_secondary + 99};
+`;
 
 const Date = styled.div`
-    font-size: 12px;
-    font-weight: 400;
-    color: ${({ theme }) => theme.text_secondary + 80};
-    @media only screen and (max-width: 768px){
-        font-size: 10px;
-    }
-`
+  font-size: 12px;
+  font-weight: 400;
+  color: ${({ theme }) => theme.text_secondary + 80};
+`;
 
+const Description = styled.div`
+  font-size: 15px;
+  font-weight: 400;
+  color: ${({ theme }) => theme.text_primary + 99};
+`;
+
+const Span = styled.span`
+  overflow: hidden;
+  display: -webkit-box;
+  max-width: 100%;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+
+  ${Card}:hover & {
+    overflow: visible;
+    -webkit-line-clamp: unset;
+  }
+`;
 
 const Skills = styled.div`
-    width: 100%;
-    display: flex;
-    gap: 12px;
-    margin-top: -10px;
-`
-
-const ItemWrapper = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-`
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+`;
 
 const Skill = styled.div`
-    font-size: 15px;
-    font-weight: 400;
-    color: ${({ theme }) => theme.text_primary + 99};
-    @media only screen and (max-width: 768px){
-        font-size: 12px;
-    }
-`
+  font-size: 15px;
+  font-weight: 400;
+  color: ${({ theme }) => theme.text_primary + 99};
 
+  @media only screen and (max-width: 768px) {
+    font-size: 12px;
+  }
+`;
 
+const IconPreview = styled.img`
+  height: 80px;
+  width: 80px;
+  border-radius: 8px;
+  cursor: pointer;
+  object-fit: cover;
+  margin-top: auto;
+  align-self: flex-start;
+
+  &:hover {
+    opacity: 0.85;
+  }
+
+  @media only screen and (max-width: 768px) {
+    height: 70px;
+    width: 70px;
+  }
+`;
+
+const ModalOverlay = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.7);
+  display: ${({ isOpen }) => (isOpen ? 'flex' : 'none')};
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+`;
+
+const ModalImage = styled.img`
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255,255,255,0.4);
+`;
 
 const ExperienceCard = ({ experience }) => {
-    return (
-        <Card>
-            <Top>
-                <Image src={experience.img} />
-                <Body>
-                    <Role>{experience.role}</Role>
-                    <Company>{experience.company}</Company>
-                    <Date>{experience.date}</Date>
-                </Body>
-            </Top>
-            <Description>
-                {experience?.desc &&
-                    <Span>{experience?.desc}</Span>
+  const [modalOpen, setModalOpen] = useState(false);
 
-                }
-                {experience?.skills &&
-                    <>
-                        <br />
-                        <Skills>
-                            <b>Skills:</b>
-                            <ItemWrapper>
-                                {experience?.skills?.map((skill, index) => (
-                                    <Skill>• {skill}</Skill>
-                                ))}
-                            </ItemWrapper>
-                        </Skills>
-                    </>
-                }
-            </Description>
-            {experience.doc &&
-                <a href={experience.doc} target="new">
-                    <Document src={experience.doc} />
-                </a>
-            }
-        </Card>
-    )
-}
+  return (
+    <>
+      <Card>
+        <Top>
+          <Left>
+            <Image src={experience.img} />
+            <Body>
+              <Role>{experience.role}</Role>
+              <Company>{experience.company}</Company>
+              <Date>{experience.date}</Date>
+            </Body>
+          </Left>
+        </Top>
 
-export default ExperienceCard
+        <Description>
+          {experience.desc && <Span>{experience.desc}</Span>}
+          {experience.skills?.length > 0 && (
+            <>
+              <br />
+              <Skills>
+                <b>Skills:</b>
+                {experience.skills.map((skill, index) => (
+                  <Skill key={index}>• {skill}</Skill>
+                ))}
+              </Skills>
+            </>
+          )}
+        </Description>
+
+        {experience.imgPreview && (
+          <IconPreview
+            src={experience.imgPreview}
+            alt="Preview"
+            onClick={() => setModalOpen(true)}
+            title="Click to view image"
+          />
+        )}
+      </Card>
+
+      <ModalOverlay isOpen={modalOpen} onClick={() => setModalOpen(false)}>
+        <ModalImage
+          src={experience.imgPreview}
+          onClick={(e) => e.stopPropagation()}
+          alt="Enlarged"
+        />
+      </ModalOverlay>
+    </>
+  );
+};
+
+export default ExperienceCard;
