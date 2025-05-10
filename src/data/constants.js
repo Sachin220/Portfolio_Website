@@ -319,6 +319,30 @@ export const Bio = {
       category: "Machine Learning",
       github: "https://github.com/Sachin220/ISL.git",
     },
+
+    {
+      id: 11,
+      title: "TrafficSense-DTLS",
+      date: "Jan 2025 - May 2025",
+      description:
+        "TrafficSense-DTLS is an AI-driven dynamic traffic signal system that uses YOLOv8 for real-time vehicle detection and adaptive signal timing, aiming to reduce congestion and enable seamless urban mobility through intelligent traffic flow management.",
+      
+      video:"https://youtu.be/pzL6Ac1X5pA",
+      image:
+        "https://github.com/Sachin220/Portfolio_Website/blob/main/src/images/TrafficSense.png?raw=true",
+      tags: [
+        "OpenCV",
+        "Python",
+        "PyTorch",
+        "TensorFlow",
+        "RNN",
+        "LSTM",
+        "Bi-LSTM",
+        "PyGame",
+      ],
+      category: "Machine Learning",
+      github: "",
+    },
     // {
     //   id: 0,
     //   title: "Podstream",
