@@ -205,7 +205,8 @@ export const Bio = {
       date: "June 2022 - Present",
       desc: "KnowTech is a YouTube channel dedicated to tech enthusiasts who enjoy exploring technology without necessarily being experts. The channel offers a variety of videos covering tech devices, gadgets, and tutorials, including topics like installing Chrome extensions on Android devices. As a content creator, I contribute to the channel by researching and creating engaging content that simplifies complex tech concepts for a broader audience. My role involves scriptwriting, video editing, and ensuring that the content is accessible and enjoyable for viewers of all levels of tech knowledge.",
       skills: [
-        "Figma",
+        "YouTube",
+        "Video Editing",
         "Canva",
         "Notion",
         "Adobe Photoshop",
